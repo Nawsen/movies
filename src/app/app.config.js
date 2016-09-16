@@ -12,6 +12,10 @@ export function appConfig($routeProvider, $locationProvider) {
     template: '<movies-search></movies-search>'
   });
 
+  $routeProvider.when('/favorites', {
+    template: '<movies-favorites></movies-favorites>'
+  });
+
   $routeProvider.otherwise({
     redirectTo: '/home'
   });

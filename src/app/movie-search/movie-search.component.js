@@ -10,6 +10,13 @@ export class MovieSearchController {
       this.movies = data;
     });
   }
+
+  add(movie){
+    //add movie to list
+    this.MoviesService.postMovie(movie.imdbId).then((data) =>{
+      
+    });
+  }
 }
 
 export var MovieSearchComponent = {

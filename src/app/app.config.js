@@ -1,5 +1,4 @@
-import {MovieHomepageController} from './movie-homepage/movie-homepage.component';
-import {MovieSearchController} from './movie-search/movie-search.component';
+/*@ngInject*/
 export function appConfig($routeProvider, $locationProvider) {
 
   $locationProvider.html5Mode(true);

@@ -1,4 +1,5 @@
-export class MovieDetailsController {
+/*@ngInject*/
+class MovieDetailsController {
   constructor(MoviesService, $routeParams) {
     this.MoviesService = MoviesService;
     this.id = $routeParams.id;

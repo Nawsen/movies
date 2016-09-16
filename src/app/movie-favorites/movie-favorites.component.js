@@ -1,4 +1,5 @@
-export class MovieFavoritesController {
+/*@ngInject*/
+class MovieFavoritesController {
   constructor(MoviesService) {
     this.MoviesService = MoviesService;
   }

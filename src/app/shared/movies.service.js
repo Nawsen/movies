@@ -34,3 +34,5 @@ export class MoviesService {
     });
   }
 }
+
+MoviesService.$inject = ['$http', 'BASEURL'];

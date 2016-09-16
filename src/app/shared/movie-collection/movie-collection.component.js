@@ -1,3 +1,4 @@
+/*@ngInject*/
 class MovieCollectionController{
   constructor($location){
     this.$location = $location;

@@ -16,6 +16,10 @@ export function appConfig($routeProvider, $locationProvider) {
     template: '<movies-favorites></movies-favorites>'
   });
 
+  $routeProvider.when('/details/:id', {
+    template: '<movies-details></movies-details>'
+  });
+
   $routeProvider.otherwise({
     redirectTo: '/home'
   });

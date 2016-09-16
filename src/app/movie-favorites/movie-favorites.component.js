@@ -9,6 +9,7 @@ export class MovieFavoritesController {
 
   remove(movie) {
     this.MoviesService.deleteMovie(movie.id).then((d) => {
+      Materialize.toast('Removed movie', 4000)
       this.getBrol();
     });
   }

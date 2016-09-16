@@ -5,12 +5,12 @@
         <img ng-src="{{movie.poster}}" height="200px">
       </div>
       <div class="card-content">
-        <span class="card-title activator grey-text text-darken-4 truncate">{{movie.title}} {{movie.year}}</span>
+        <span class="card-title activator grey-text text-darken-4 truncate" ng-click="$ctrl.detail(movie)">{{movie.title}}</span>
       </div>
-      <div class="card-action" ng-if="!$ctrl.favorite">
+      <div class="card-action activator" ng-if="!$ctrl.favorite">
         <a ng-click="$ctrl.addSelected(movie)">Add</a>
       </div>
-      <div class="card-action" ng-if="$ctrl.favorite">
+      <div class="card-action activator" ng-if="$ctrl.favorite">
         <a ng-click="$ctrl.remSelected(movie)">Remove</a>
       </div>
     </div>

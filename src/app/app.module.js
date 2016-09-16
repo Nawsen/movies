@@ -9,6 +9,7 @@ import {MovieCollectionComponent} from './shared/movie-collection/movie-collecti
 import {MovieHomepageComponent} from './movie-homepage/movie-homepage.component'
 import {MovieSearchComponent} from './movie-search/movie-search.component'
 import {MovieFavoritesComponent} from './movie-favorites/movie-favorites.component'
+import {MovieDetailsComponent} from './movie-details/movie-details.component'
 
 export default angular
   .module('contactsApp', ['ngRoute'])
@@ -23,4 +24,5 @@ export default angular
   .component('moviesHomepage', MovieHomepageComponent)
   .component('moviesSearch', MovieSearchComponent)
   .component('moviesFavorites', MovieFavoritesComponent)
+  .component('moviesDetails', MovieDetailsComponent)
   .name;

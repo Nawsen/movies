@@ -23,4 +23,14 @@ export class MoviesService {
       return resp.data;
     });
   }
+  getDetailMovie(id){
+    return this.$http.get(`${this.BASEURL}/${id}`).then((resp) =>{
+      return resp.data;
+    });
+  }
+  setSeen(movie){
+    return this.$http.put(`${this.BASEURL}/${movie.id}`, {seen: movie.seen}).then((resp) => {
+      return resp.data;
+    });
+  }
 }

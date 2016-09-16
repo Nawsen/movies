@@ -14,7 +14,7 @@ export class MovieSearchController {
   add(movie){
     //add movie to list
     this.MoviesService.postMovie(movie.imdbId).then((data) =>{
-      
+      Materialize.toast('Added new movie', 4000)
     });
   }
 }

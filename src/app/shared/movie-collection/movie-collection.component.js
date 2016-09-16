@@ -1,12 +1,16 @@
 class MovieCollectionController{
-  constructor(){
-
+  constructor($location){
+    this.$location = $location;
   }
   addSelected(movie){
     this.add({movie: movie});
   }
   remSelected(movie){
     this.remove({movie: movie});
+  }
+
+  detail(movie){
+    this.$location.path('/details/' + movie.id);
   }
 }
 

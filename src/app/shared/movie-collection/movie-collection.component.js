@@ -3,10 +3,10 @@ class MovieCollectionController{
     this.$location = $location;
   }
   addSelected(movie){
-    this.add({movie: movie});
+    this.added({movie: movie});
   }
   remSelected(movie){
-    this.remove({movie: movie});
+    this.removed({movie: movie});
   }
 
   detail(movie){
@@ -20,7 +20,7 @@ export var MovieCollectionComponent = {
   bindings: {
     movies: '<',
     favorite: '<',
-    add: '&',
-    remove: '&'
+    added: '&',
+    removed: '&'
   }
 };

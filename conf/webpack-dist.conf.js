@@ -62,9 +62,15 @@ module.exports = {
       inject: true
     }),
     new webpack.optimize.UglifyJsPlugin({
-      compress: {unused: true, dead_code: true} // eslint-disable-line camelcase
+      compress: {unused: true, dead_code: true}// eslint-disable-line camelcase
     }),
-    new ExtractTextPlugin('index-[contenthash].css')
+    new ExtractTextPlugin('index-[contenthash].css'),
+    new webpack.optimize.CommonsChunkPlugin({name: 'vendor'}),
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery",
+      "window.jQuery": "jquery"
+    })
   ],
   postcss: () => [autoprefixer],
   output: {
